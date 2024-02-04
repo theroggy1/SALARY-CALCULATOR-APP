@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+   margin-bottom: 1rem;
+}
+
+body {
+   background: linear-gradient(135deg, rgba(0, 141, 215, 1) 0%, rgba(163, 0, 215, 1) 80%);
+   min-height: 100vh;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display:  grid;
+   place-content: center;
+}
+
+.container {
+   background-color: #fff;
+   color: #000;
+   max-width: 450px;
+   padding: 1.5rem;
+   border: 2px solid #000;
+   border-radius: 1rem;
+}
+
+.calculators-inputs {
+   margin-bottom: 2rem;
+}
+
+.calculators-inputs .inputs {
+   margin-bottom: .5rem;
+}
+
+.calculators-inputs .inputs label {
+   font-weight: bold;
+}
+
+.calculators-inputs .inputs .hourly-rate {
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+}
+
+.calculations {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculations p {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.calculations span {
+    color: #00b303;
+}
+
+input[type="range"] {
+    appearance: none;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #b3b3b3;
+    height: 5px;
+    border-radius: 1rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background: #00b303;
+    margin-top: -5px;
+    border-radius: 50%;
+}
